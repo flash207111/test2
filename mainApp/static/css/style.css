@@ -1,0 +1,111 @@
+* {
+    margin: 0px; padding: 0px}
+html{
+            background-color: #d6d8db;
+            /*background-image: url("http://top-desktop.ru/files/priroda/1680x1050/152.jpg");*/
+        }
+#navbar, #navbar ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#navbar {
+	height: 35px;
+	background-color: #666;
+	padding-left: 5%;
+	min-width: 470px;
+    font-size: large;
+}
+
+#navbar ul{
+	display: none;
+	background-color: #007bff;
+	position: absolute;
+	top: 100%;
+}
+
+#navbar li {
+	float: left;
+	position: relative;
+	height: 100%;
+}
+
+#navbar li a {
+	display: block;
+	padding: 6px;
+	width: 100px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+}
+
+#navbar ul li { float: none; }
+
+#navbar li:hover { background-color: #007bff; }
+
+#navbar li:hover ul {
+	display: block;
+}
+
+#navbar ul li:hover { background-color: #666; }
+
+#first {color: #1c7430;}
+.style3 {color: #0c5460}
+p i {color: #6610f2}
+p.example, b{font-size: 25px; font-weight: normal;}
+#mydiv{
+    border: 5px  outset #007bff; margin: 10px; padding: 2px; border-radius: 15px;
+}
+
+
+/*p#abzac:first-letter {font-size: xx-large; color: #a71d2a}*/
+p#abzac:first-line {font-size: x-large; color: #a71d2a}
+#mytext { font-size: 1.0em; font-weight: normal;
+    font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;}
+p {text-indent: 1.1em}
+a.hrew {font-size: x-large; color: #0000FF; text-decoration: none}
+a.hrew:hover {font-size: x-large; color: #007bff; text-decoration: none}
+/*a.hrew:visited {font-size: x-large; color: #6f42c1; text-decoration: none}*/
+
+#headBlock {
+    width: calc(100% - 20px); height: 50px; background: #ffffff; float: left;
+    border-bottom: 2px solid silver; padding: 10px; font-size: 1.2em; color: #333;
+    font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+}
+article, aside {
+    background-color: #f7f7f7; min-height: 400px; border-radius: 5px; border: 2px solid silver; box-sizing: border-box;
+    margin-top: 20px;  overflow: auto; float: left; padding: 10px;
+}
+article {
+    width: 60%; margin-left: 5%; margin-right: 5%;
+}
+aside {
+    width: 25%;
+}
+aside ul {
+     width: 80%; margin-left: 10%; list-style-position: inside; list-style-type: circle;
+}
+footer {
+    width: calc(100% - 20px); height: 50px; background: #ffffff; float: left;
+    border-top: 2px solid silver; margin-top: 20px; padding: 10px; font-size: smaller; color: #333;
+    font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+}
+#last{
+    float: left; width: 200px; height: 100px; margin-top: 20px; margin-left: 5%; border-radius: 5px; border: 2px solid silver;
+}
+#block_red {
+    background: red;
+    width: 100px;
+	height: 100px;
+	position: relative;
+    z-index: 1;
+}
+#block_blue {
+    background: blue;
+    width: 100px;
+	height: 100px;
+	position: relative;
+	top: -50px;
+	right: -50px; z-index: 2;
+}

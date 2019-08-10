@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devic-ewidth, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatable" content="ie=edge">
+    <title>Заголовок страницы</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+</head>
+<body>
+    <img src="{% static 'mainApp/image/kisspng-fedora-logo-linux2.png' %}" width="220" height="100" alt="smaller">
+ <div class="jumbotron">
+    <div class="container">
+{#        <img src="{% static 'mainApp/image/Logo_fedoralogo.png' %}" class="img-thumbnail">#}
+{#        <h1>{% include "mainApp/includes/some_html.html" %}</h1>#}
+        <a href="/" class="btn btn-success btn-lg">Главная страница</a>
+        <a href="/news" class="btn btn-primary btn-lg">Новости &raquo;</a>
+        <a href="/contact" class="btn btn-info btn-lg">Контакты</a>
+        <a href="/webexample" class="btn btn-secondary btn-lg">HTML5 Lessons</a>
+        <a href="/webexample/3" class="btn btn-warning btn-lg">Boot_45</a>
+        <br /> <br />
+        {% block content %}
+        {% endblock %}
+    </div>
+  </div>
+  <div class="container">
+    <img src="{% static 'mainApp/image/images.jpeg' %}" class="img-thumbnail">
+    <hr>
+      &#127279 copyleft — лицензия 2019
+{#    &copy; Все права защищены 2018#}
+  </div>
+</body>
+</html>

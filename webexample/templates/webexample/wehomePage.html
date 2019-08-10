@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Тестовый сайт">
+    <meta name="keywords" content="тестовый, сайт, обучение">
+    <title>HTML5 Lessons</title>
+    {% load staticfiles %}
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+{#    <script src="{% static 'js/bootstrap.min.js' %}"></script>#}
+{#    <style type="text/css">#}
+{#        body{#}
+{#            background-color: #d6d8db;#}
+{#        }#}
+{#    </style>#}
+</head>
+<body>
+    <header>
+        <ul id="navbar">
+          <li><a href="http://localhost:8000/">Главная</a></li>
+          <li><a href="http://localhost:8000/news/">Новости</a></li>
+          <li><a href="http://google.com" target="_blank">Google</a></li>
+          <li><a href="http://localhost:8000/contact/">Контакты</a>
+            <ul>
+              <li><a href="#">Адрес</a></li>
+              <li><a href="#">Телефон</a></li>
+              <li><a href="#">Email</a></li>
+            </ul>
+          </li>
+          <li><a href="./1">Bootstrap</a></li>
+          <li><a href="./2">Bootstrap_exam</a></li>
+        </ul>
+    </header>
+{#    <p>Меня очень заинтересовала <a href="#command">эта команда</a></p>#}
+{#        Этот текст будет абзацем</p>#}
+
+    <hr><hr>
+    <div id="headBlock"><img src="{% static 'mainApp/image/kisspng-fedora-logo-linux2.png' %}"
+                             width="120" height="50" alt="smaller">
+    </div>
+    <article>
+        <h1 id="first">Привет!!!</h1>
+        <h1>Привет!!!</h1>
+        <h3 class="style3">Заголовок 3 уровня</h3>
+        <p>Этот текст <i>будет</i> абзацем2</p>
+        <h3 class="style3">Заголовок 3 уровня2</h3>
+        <p class="example">Этот текст будет абзацем</p>
+        <b>Этот текст будет абзацем</b>
+        <p id="abzac">Этот текст будет абзацем<br>
+        <div id="mydiv">
+            <p id="mytext">
+                В CSS присутствует множество стилей для текста. Поскольку текст это большая часть любого сайта, то создать красивый
+                и запоминающийся текст это дело стоящее. В уроке мы познакомимся со специальными стилями, которые служат для работы
+                с текстом.
+            </p>
+        </div>
+        <p>Франсуа де Ларошфуко говорил: <q>Пример заразителен, поэтому все благодетели рода человеческого и все злодеи находят подражателей.
+        Добрым делам мы подражаем из чувства соревнования, дурным же — из врожденной злости, которую опыт сдерживал,
+        а пример выпустил на волю.</q></p>
+        <blockquote cite="http://citaty.su/primer-citaty-i-aforizmy">Пример заразителен, поэтому все благодетели рода человеческого
+        и все злодеи находят подражателей. <br />
+        Добрым делам мы подражаем из чувства соревнования, дурным же — из врожденной злости, которую опыт сдерживал,
+        а пример выпустил на волю.
+        </blockquote>
+        <p>
+            Bootstrap (или же Twitter Bootstrap) - библиотека вмещающая в себе набор стилей, классов и скриптов для создания
+            сайтов. В библиотеке можно найти массу шаблонов, использование которых не составит особого труда.
+            При помощи библиотеки Bootstrap вы можете создавать всплывающие окна, подсказки при наведении, раскрывающиеся меню,
+            табы, метки и многие другие полезные вещи всего за пару строк кода.
+            В этом видеокурсе мы научимся с вами работать с библиотекой, разберемся с существующими классами и скриптами,
+            а также научимся создавать сайты при помощи Bootstrap.
+            Разработчики постоянно работают над различными обновлениями, добавляя новые функции и возможности.
+            На данный момент эта библиотека является одной из самых популярных в своей сфере и получает
+            положительные отзывы от большинства пользователей.
+        </p>
+    </article>
+    <aside>
+        <ul>
+            <li>Элемент 1</li>
+            <li>Элемент 2</li>
+            <li>Элемент 3</li>
+            <li>Элемент 4</li>
+            <li>Элемент 5</li>
+            <li>Элемент 6</li>
+            <li>Элемент 7</li>
+            <li>Элемент 8</li>
+        </ul>
+    </aside>
+    <footer><address>Russia, Bashkortostan Republic, Meleuz sity</address></footer>
+    <br> <br>
+{#    <p><small>Франсуа де Ларошфуко</small></p>#}
+{#    <p><abbr title="Этот текст будет абзацем6">ЭТБА</abbr></p>#}
+    <!-- Комментарий -->
+{#    <br/>#}
+{#    <input type="button" id="hider" value="Нажмите, чтобы спрятать текст"/>#}
+{#    <div id="hide">Текст</div>#}
+{#    <script>#}
+{#        document.getElementById('hider').onclick = function () {#}
+{#            document.getElementById('hide').style.display = 'none';#}
+{#        }#}
+{#    </script>#}
+{#    <ol type="1"> <!-- Пронумерованный список -->#}
+{#        <li>Первый пункт</li>#}
+{#        <li>Второй пункт</li>#}
+{#        <li>Первый пункт</li>#}
+{#    </ol>#}
+{##}
+{#    <ul type= "square"> <!-- Не нумерованный список -->#}
+{#        <li>Первый пункт</li>#}
+{#        <li>Второй пункт</li>#}
+{#    </ul>#}
+
+{#    <a name="command"></a>#}
+{#    <pre>sudo dnf upgrade --exclude=wine*</pre>#}
+{#    <img src="{% static 'mainApp/image/images.jpeg' %}" class="img-thumbnail">#}
+{#    <div style="position: absolute; right: 20px; top: 5px; font-family: Verdana;font-size: 20px; padding: 4px">#}
+{#        This is text appears in the#}
+{#        <span style="font-style: italic; color: #a71d2a">upper-left hand corner</span> of the page.<br>#}
+{#        it also has a big blue groovy border around it.#}
+{#    </div>#}
+{#    <form name="myform" action="" method="post">#}
+{#        <label for="name">Введите ваше имя: </label><input name="nm" id="name" type="text" placeholder="Поиск..." maxlength="120">#}
+{#        <br> <br>#}
+{#        <label for="date">День рождения: </label><input type="date" id="date" name="date" ><br> <br>#}
+{#        <label for="url">Введите ссылку: </label><input type="url" id="url"><br> <br>#}
+{#        <label for="tel">Телефон: </label><input type="tel" id="tel"><br> <br>#}
+{#        <label for="ran">Max or min: </label><input type="range" id="ran"><br> <br>#}
+{#        <label for="male">Мужской: </label><input type="radio" id="male" name="sex">#}
+{#        <label for="female">Женский: </label><input type="radio" id="female" name="sex"><br> <br>#}
+{#        <label for="pass">Пароль: </label><input type="password" id="pass"><br> <br>#}
+{#        <label for="im">Картинка: </label><input type="image" id="im"><br> <br>#}
+{#        <label for="file"></label><input type="file" id="file"><br> <br>#}
+{#        <label for="col">Цвет: </label><input type="color" id="col"><br> <br>#}
+{#        <label for="ck">Понравилось?: </label><input type="checkbox" id="ck"><br> <br>#}
+{#        <label for="sub"></label><input type="submit" id="sub"><br><br>#}
+{#        <p><b>Введите ваш отзыв: </b></p>#}
+{#        <textarea rows="10" cols="45" name="text" placeholder="Example"></textarea>#}
+{#        <p><input type="submit" value="Отправить"></p>#}
+{#        <label for="res"></label><input type="reset" id="res"><br>#}
+{#    </form>#}
+{#    <table border="1" cellpadding="7" cellspacing="0">#}
+{#        <tr>#}
+{#            <th colspan="3" bgcolor="#6495ed" align="center">Ячейка1</th>#}
+{#        </tr>#}
+{#        <tr>#}
+{#            <td width="50%" valign="middle" align="center">Ячейка2</td>#}
+{#            <td>Ячейка3</td>#}
+{#            <td>Ячейка4</td>#}
+{#        </tr>#}
+{##}
+{#    </table>#}
+{#    <form action="" method="post">#}
+{#        <select size="5" multiple="multiple" name="hero[]">#}
+{#            <option disabled="disabled">Выберите героя</option>#}
+{#            <option value="chebu">Чебурашка</option>#}
+{#            <option selected="selected" value="crock">Крокодил Гена</option>#}
+{#            <option value="shap">Шапокляк</option>#}
+{#            <option value="rat">Крыса Лариса</option>#}
+{#        </select>#}
+{#        <input type="submit" value="Отправить">#}
+{#    </form>#}
+{#    <menu>#}
+{#        <li>Gthdsq</li>#}
+{#        <li>Второй</li>#}
+{#    </menu>#}
+{#    <article>#}
+{#        <!-- Крутые теги!!! -->#}
+{#        <p>Спокойная мелодия</p>#}
+{#        <audio controls="controls">#}
+{#            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">#}
+{#        </audio>#}
+{#        <video controls="controls">#}
+{#            <source src="http://techslides.com/demos/sample-videos/small.mp4">#}
+{#        </video>#}
+{#    </article>#}
+{#    <aside>Боковая панель</aside>#}
+{#    <footer>#}
+{#        <p>Низ</p>#}
+{#    </footer>#}
+{#    <details>#}
+{#        <summary>Информация об авторе</summary>#}
+{#        <p>О. Бендер</p>#}
+{#    </details>#}
+{#    <mark>Текст</mark><br>#}
+{#    <ruby>#}
+{#        E<rt>ru</rt>#}
+{#        <rt>en</rt>#}
+{#    </ruby>#}
+{#    <progress max="100" value="25">#}
+{#        Загружено на <span id="value">25</span>%#}
+{#    </progress>#}
+{#    <form oninput="result.value=(cm.value/2.54).toFixed(2)">#}
+{#        <p>Введите длину в см :#}
+{#            <input type="number" name="cm" autofocus></p>#}
+{#            <p>Длина в дюймах : <output name="result">0</output></p>#}
+{#    </form>#}
+{#    <div id="block_red"></div>#}
+{#    <div id="block_blue"></div>#}
+    <div id="last">
+        <img src="{% static 'mainApp/image/images.jpeg' %}">
+    </div>
+</body>
+</html>

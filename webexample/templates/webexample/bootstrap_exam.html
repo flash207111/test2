@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Bootstrap exam</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- jQuery -->
+
+    {% load staticfiles %}
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://getfedora.org/" target="_blank"><b>Fedora</b></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input type="text" placeholder="Email.." class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-success">Sign In</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Hello, world!</h1>
+            <p>Red Hat официально <a href="https://riscv.org/membership/6696/red-hat/">присоединилась к RISC-V Foundation</a>
+                . Мы этого ждали довольно долго. Уже с зимы 2019 года дистрибутив Fedora довольно просто устанавливается
+                на систему с RISC-V - для этого нужен лишь цифровой осциллограф, FPGA, и небольшое количество другого
+                легко доступного оборудования. Для года RISC-V на десктопе все готово!</p>
+            <p><a href="https://riscv.org/membership/6696/red-hat/" class="btn btn-primary btn-lg" target="_blank">Learn more &raquo;</a> </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Заголовок1</h2>
+                <p>Red Hat официально <a href="https://riscv.org/membership/6696/red-hat/">присоединилась к RISC-V Foundation</a>.
+                    Мы этого ждали довольно долго. Уже с зимы 2019 года дистрибутив Fedora довольно просто устанавливается
+                    на систему с RISC-V - для этого нужен лишь цифровой осциллограф, FPGA, и небольшое количество другого
+                    легко доступного оборудования. Для года RISC-V на десктопе все готово!
+                </p>
+                <p><a href="https://riscv.org/membership/6696/red-hat/" class="btn btn-default"
+                      target="_blank">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Заголовок2</h2>
+                <p>Red Hat официально присоединилась к RISC-V Foundation. Мы этого ждали довольно долго.
+
+                Уже с зимы 2019 года дистрибутив Fedora довольно просто устанавливается на систему с RISC-V -
+                для этого нужен лишь цифровой осциллограф, FPGA, и небольшое количество другого легко доступного
+                оборудования. Для года RISC-V на десктопе все готово!</p>
+                <p><a href="https://riscv.org/membership/6696/red-hat/" class="btn btn-default"
+                      target="_blank">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Заголовок3</h2>
+                <p>Red Hat официально присоединилась к RISC-V Foundation. Мы этого ждали довольно долго.
+
+                Уже с зимы 2019 года дистрибутив Fedora довольно просто устанавливается на систему с RISC-V -
+                для этого нужен лишь цифровой осциллограф, FPGA, и небольшое количество другого легко доступного
+                оборудования. Для года RISC-V на десктопе все готово!</p>
+                <p><a href="https://riscv.org/membership/6696/red-hat/" class="btn btn-default"
+                      target="_blank">View details &raquo;</a></p>
+            </div>
+        </div>
+        <hr>
+        <footer>
+            <p>&copy; Все права защищены 2019</p>
+        </footer>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+</body>
+</html>
