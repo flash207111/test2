@@ -12,3 +12,6 @@ def index2(request):
 
 def index3(request):
     return render(request, 'webexample/boot_45.html')
+
+def index4(request):
+    return render(request, 'webexample/boot_40.html')
