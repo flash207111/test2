@@ -16,13 +16,12 @@ html, body{
 }
 
 .carousel-inner{
+        height: 500px;
+}
+.carousel-inner img{
+    transform: translateY(-20%);
     height: 100%;
-}
-
-@media (min-width: 1100px) {
-    .carousel-inner img{
     width: 100%;
-}
 }
 
 .carousel-caption{
@@ -36,3 +35,26 @@ html, body{
     }
 }
 
+.jumbotron{
+    padding: 1em; border-radius: 0; width: 70%; margin: 0 auto; margin-top: 20px;
+}
+
+.padding{
+    padding-bottom: 2em;
+}
+
+.alert{
+    width: 75%; margin: 0 auto; padding-top: 2em;
+}
+
+.alert hr{
+    border-top: 2px solid silver; width: 95%; margin-top: 0.3em; margin-bottom: 1em;
+}
+
+.fa-code{color: #e54d26;}
+.fa-bold{color: #563d7c;}
+.fa-css3{color: #2163af;}
+
+.fa-code, .fa-bold, .fa-css3 {
+    font-size: 3em; margin: 1em;
+}
