@@ -58,3 +58,48 @@ html, body{
 .fa-code, .fa-bold, .fa-css3 {
     font-size: 3em; margin: 1em;
 }
+
+#fixed {
+    height: 400px;
+    border-top: 4px solid #f0f0f0;
+    border-bottom: 4px solid #f0f0f0;
+    background: url("header-bg.jpg") no-repeat center center fixed;
+    background-blend-mode: multiply;
+    background-color: lightblue;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#gifsBtn{
+    margin-bottom: 20px;
+}
+
+#gifs img{
+    max-width: 100%; max-height: 200px; margin-bottom: 20px;
+}
+
+@media (max-width: 750px) {
+    .display-4{
+        font-size: 2em;
+    }
+}
+
+.social a {
+    font-size: 2em; padding: 20px;
+}
+
+.fa-youtube{ color: #bb0000}
+.fa-vk{ color: #007bff}
+.fa-twitter{ color: #00aced}
+.fa-instagram{ color: #517fa4}
+
+.fa-instagram:hover, .fa-twitter:hover, .fa-youtube:hover, .fa-vk:hover, .fa-google:hover{
+    color: #ccc;
+}
+
+footer{
+    background-color: #3f3f3f; padding-top: 40px; border-top: solid silver; color: #ccc;
+}
+

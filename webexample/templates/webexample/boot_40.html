@@ -138,12 +138,108 @@
                 <a href="#" class="btn btn-danger">Veiw details</a>
             </div>
             <div class="col-lg-5">
-                <img src="{% static 'mainApp/image/penguin-159524_1280.png' %}" class="img-fluid">
+                <img src="{% static 'mainApp/image/penguin-159524_1280.png' %}" class="img-fluid"width="520" height="400">
             </div>
         </div>
     </div>
 
     <!-- Блок с фиксированным изображением -->
+    <figure>
+        <div class="fixed-wrap">
+            <div id="fixed">
+
+            </div>
+        </div>
+    </figure>
+    <!-- Закрытая секция -->
+    <div class="text-center">
+        <button type="button" id="gifsBtn" class="btn btn-primary" data-toggle="collapse" data-target="#gifs">
+        Open block
+    </button>
+    </div>
+    <div id="gifs" class="collapse">
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-sm-6 col-md-3">
+                    <img src="{% static 'mainApp/image/c01.gif' %}" class="gif">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img src="{% static 'mainApp/image/c02.gif' %}" class="gif">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img src="{% static 'mainApp/image/c03.gif' %}" class="gif">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img src="{% static 'mainApp/image/c04.gif' %}" class="gif">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Карточки к языкам программирвания -->
+    <div class="container-fluid padding">
+        <div class="row alert text-center">
+            <div class="col-12">
+                <h1 class="display-4">Programming languages</h1>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <div class="container padding">
+        <div class="row padding">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="{% static 'mainApp/image/pic.jpg' %}" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Unreal Engine</h4>
+                        <p class="card-text">В CSS присутствует множество стилей для текста. Поскольку текст это большая часть любого сайта</p>
+                        <a href="#" class="btn btn-warning">Veiw</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="{% static 'mainApp/image/pic2.jpg' %}" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">PyGame</h4>
+                        <p class="card-text">В CSS присутствует множество стилей для текста. Поскольку текст это большая часть любого сайта</p>
+                        <a href="#" class="btn btn-warning">Veiw</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="{% static 'mainApp/image/pic4.jpg' %}" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Best lead</h4>
+                        <p class="card-text">В CSS присутствует множество стилей для текста. Поскольку текст это большая часть любого сайта</p>
+                        <a href="#" class="btn btn-warning">Veiw</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <!-- Футер -->
+    <footer class="container-fluid">
+        <div class="container-fluid">
+            <div class="row padding text-center">
+                <div class="col-12">
+                    <h2>Contacts</h2>
+                </div>
+                <div class="col-12 social padding">
+                    <a href=""><span class="fab fa-twitter"></span></a>
+                    <a href=""><span class="fab fa-youtube"></span></a>
+                    <a href=""><span class="fab fa-instagram"></span></a>
+                    <a href=""><span class="fab fa-vk"></span></a>
+                    <a href=""><span class="fab fa-google"></span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
 </body>
 </html>
